@@ -5,6 +5,7 @@
  */
 package csd4464.assignment1.kyle.pkg2.tiger.kyle;
 
+import static csd4464.assignment1.kyle.pkg2.tiger.kyle.CSD4464Assignment1Kyle2TigerKyle.stringPower;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -21,26 +22,26 @@ public class CSD4464Assignment1Kyle2TigerKyleTest {
     public CSD4464Assignment1Kyle2TigerKyleTest() {
     }
     
-    @BeforeClass
+   // @BeforeClass
     public static void setUpClass() {
     }
     
-    @AfterClass
+   // @AfterClass
     public static void tearDownClass() {
     }
     
-    @Before
+  //  @Before
     public void setUp() {
     }
     
-    @After
+  //  @After
     public void tearDown() {
     }
 
     /**
      * Test of main method, of class CSD4464Assignment1Kyle2TigerKyle.
      */
-    @Test
+   // @Test
     public void testMain() {
         System.out.println("main");
         String[] args = null;
@@ -52,7 +53,7 @@ public class CSD4464Assignment1Kyle2TigerKyleTest {
     /**
      * Test of stringPower method, of class CSD4464Assignment1Kyle2TigerKyle.
      */
-    @Test
+    //@Test
     public void testEmptyStringShouldReturnEmptyString() {
         System.out.println("stringPower");
         String s = "";
@@ -63,4 +64,28 @@ public class CSD4464Assignment1Kyle2TigerKyleTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
+      //@Test
+    public void  testLessThanOneShouldReturnNull(int i) {
+        System.out.println("stringPower");
+   
+            if ( i < 1) 
+            {
+              return null; 
+           
+} 
+    }      
+  public void  testStringAndOneShouldReturnString(int i) {
+        System.out.println("stringPower");
+   
+            if ( i >=1) 
+            {
+                   System.out.print(i); 
+            }
+           
+} 
 }
+
+
+}         
+       
+
