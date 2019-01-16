@@ -22,26 +22,26 @@ public class CSD4464Assignment1Kyle2TigerKyleTest {
     public CSD4464Assignment1Kyle2TigerKyleTest() {
     }
     
-   // @BeforeClass
+    @BeforeClass
     public static void setUpClass() {
     }
     
-   // @AfterClass
+    @AfterClass
     public static void tearDownClass() {
     }
     
-  //  @Before
+    @Before
     public void setUp() {
     }
     
-  //  @After
+    @After
     public void tearDown() {
     }
 
     /**
      * Test of main method, of class CSD4464Assignment1Kyle2TigerKyle.
      */
-   // @Test
+   @Test
     public void testMain() {
         System.out.println("main");
         String[] args = null;
@@ -53,7 +53,7 @@ public class CSD4464Assignment1Kyle2TigerKyleTest {
     /**
      * Test of stringPower method, of class CSD4464Assignment1Kyle2TigerKyle.
      */
-    //@Test
+    @Test
     public void testEmptyStringShouldReturnEmptyString() {
         System.out.println("stringPower");
         String s = "";
@@ -64,7 +64,7 @@ public class CSD4464Assignment1Kyle2TigerKyleTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-      //@Test
+      @Test
     public void  testLessThanOneShouldReturnNull(int i) {
         System.out.println("stringPower");
    
@@ -82,10 +82,21 @@ public class CSD4464Assignment1Kyle2TigerKyleTest {
                    System.out.print(i); 
             }
            
-} 
+}
+   @Test
+    public void testStringAndTwoShouldReturnStringDoubled(){
+        System.out.println("stringPower");
+        String s ="bob";
+        int i = 2;
+        String expResult = "";
+        String result = CSD4464Assignment1Kyle2TigerKyle.stringPower(s, i);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+        
+    }
 }
 
-
-}         
+        
        
 
